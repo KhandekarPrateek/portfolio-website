@@ -1,0 +1,15 @@
+.sidebar-container {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  /* box-shadow: 0 0 30px rgb(0 0 0/5%); */
+}
+
+.sidebar-title {
+  color: #868a9b;
+}
+.sidebar-title:hover {
+  color: black;
+}
