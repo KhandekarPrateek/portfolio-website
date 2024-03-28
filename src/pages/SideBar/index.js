@@ -5,7 +5,7 @@ import { Row } from "reactstrap";
 const SideBar = () => {
   return (
     <>
-      <div className="sidebar-container  d-flex align-items-center justify-content-center sideBar-display">
+      <div className="sidebar-container  d-flex align-items-center justify-content-center sideBar-display sidenav">
         {/* <Row className="">
           <h1>PRATEEK</h1>
         </Row> */}
