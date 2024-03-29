@@ -1,3 +1,6 @@
 .about-container {
   height: 100vh;
+  box-shadow: -10px 0 30px rgb(0 0 0/5%);
+  /* box-shadow: -5px 0 3px -3px #00000030; */
+  /* only on left shadow */
 }
