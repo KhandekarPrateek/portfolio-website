@@ -11,11 +11,11 @@ const SideBar = () => {
         </Row> */}
         <Row>
           <div className="vstack gap-3">
-            <Title Heading="Home" />
-            <Title Heading="About" />
-            <Title Heading="Service" />
-            <Title Heading="Portfolio" />
-            <Title Heading="Contact" />
+            <Title Heading="Home" link="Home" />
+            <Title Heading="About" link="About" />
+            <Title Heading="Service" link="Service" />
+            <Title Heading="Portfolio" link="Portfolio" />
+            <Title Heading="Contact" link="Contact" />
           </div>
         </Row>
       </div>

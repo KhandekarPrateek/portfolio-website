@@ -8,8 +8,9 @@
 }
 
 .sidebar-title {
-  color: #868a9b;
+  color: #868a9b !important;
+  text-decoration: none;
 }
 .sidebar-title:hover {
-  color: black;
+  color: black !important;
 }

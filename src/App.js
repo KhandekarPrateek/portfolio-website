@@ -1,8 +1,8 @@
-import { Col, Row } from "reactstrap";
 import "./App.css";
 import SideBar from "./pages/SideBar";
 import Home from "./pages/Home";
 import SplitScreen from "./SplitScreen";
+import About from "./pages/About";
 
 const App = () => {
   return (
@@ -10,7 +10,7 @@ const App = () => {
       <SplitScreen leftLen={1} rightLen={4}>
         <SideBar />
         <Home />
-        <Home />
+        <About />
       </SplitScreen>
     </div>
   );

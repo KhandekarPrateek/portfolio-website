@@ -7,14 +7,14 @@ const Pane = styled.div`
   flex: ${(props) => props.weight};
 `;
 const SplitScreen = ({ children, leftLen = 1, rightLen = 1 }) => {
-  const [left, right] = children;
+  const [left, rightHome, right1About] = children;
   return (
     <Container>
       <Pane weight={leftLen}>{left}</Pane>
 
       <Pane weight={rightLen}>
-        {right}
-        {right}
+        {rightHome}
+        {right1About}
       </Pane>
     </Container>
   );
