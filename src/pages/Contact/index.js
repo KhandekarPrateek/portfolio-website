@@ -46,12 +46,13 @@ const Contact = () => {
       subject: "",
     });
   };
-  console.log(formData, "formdata");
 
   return (
-    <div className="contact-container">
-      <Row>
-        <Col sm={6}>
+    <Row className="contact-container " id="Contact">
+      <Col sm={6} className=" d-flex align-items-center ">
+        <div className="w-100">
+          <div className="contact-header">CONTACT</div>
+          <div className="contact-me pb-5">Get in Touch</div>
           <Form onSubmit={handleSubmit} ref={form} id="contact-form">
             <FormGroup>
               <Label for="from_name" hidden>
@@ -64,6 +65,7 @@ const Contact = () => {
                 type="text"
                 onChange={handleChange}
                 value={formData.from_name}
+
                 // required
               />
             </FormGroup>{" "}
@@ -109,9 +111,10 @@ const Contact = () => {
             </FormGroup>{" "}
             <Button>Submit</Button>
           </Form>
-        </Col>
-      </Row>
-    </div>
+        </div>
+      </Col>
+      <Col sm={6}>map</Col>
+    </Row>
   );
 };
 

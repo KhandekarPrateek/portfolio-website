@@ -1,3 +1,27 @@
 .contact-container {
   height: 100vh;
+  box-shadow: -10px 0 30px rgb(0 0 0/5%);
+}
+.contact-me {
+  color: #000;
+  font-family: syne, Sans-serif !important;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 1.3em;
+}
+.contact-header {
+  display: inline-block;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  position: relative;
+  /* padding-left: 60px; */
+}
+.form-control:focus {
+  box-shadow: none !important;
+  background-color: #eaeaea;
+  color: #868a9b;
+}
+.form-control {
+  background-color: #eaeaea;
+  color: #868a9b;
 }

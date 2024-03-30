@@ -1,16 +1,37 @@
-.sidebar-container {
-  height: 100vh;
-  position: fixed;
-
-  left: 8%;
-  overflow-x: hidden;
-  /* box-shadow: 0 0 30px rgb(0 0 0/5%); */
-}
-
 .sidebar-title {
   color: #868a9b !important;
   text-decoration: none;
 }
 .sidebar-title:hover {
   color: black !important;
+}
+@media screen and (min-width: 700px) {
+  .sidebar-container {
+    height: 100vh;
+    position: fixed;
+
+    left: 8%;
+    overflow-x: hidden;
+    overflow: auto;
+    /* box-shadow: 0 0 30px rgb(0 0 0/5%); */
+  }
+}
+@media screen and (max-width: 700px) {
+  .sidebar-container {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar-container a {
+    display: float; /* Change float to display block */
+    text-align: center;
+  }
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar-container a {
+    text-align: center;
+    float: none;
+  }
 }
