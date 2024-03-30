@@ -3,6 +3,7 @@ import "./App.css";
 import SideBar from "./pages/SideBar";
 import Home from "./pages/Home";
 import About from "./pages/About";
+import Contact from "./pages/Contact";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
         <Col sm={10}>
           <Home />
           <About />
+          <Contact />
         </Col>
       </Row>
     </div>
