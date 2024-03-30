@@ -2,13 +2,11 @@
   height: 100vh;
   word-break: break-all;
   box-shadow: -10px 0 30px rgb(0 0 0/5%);
-
-  /* box-shadow: -5px 0 3px -3px #00000030; */
 }
 .home-name {
   color: #fff;
   font-family: archivo black, Sans-serif;
-  font-size: 130px;
+  font-size: 5em;
   font-weight: 800;
   text-transform: uppercase;
   line-height: 1.1em;
@@ -20,7 +18,7 @@
 .home-surname {
   color: #000;
   font-family: archivo black, Sans-serif;
-  font-size: 130px;
+  font-size: 5em;
   font-weight: 800;
   text-transform: uppercase;
   line-height: 1.1em;

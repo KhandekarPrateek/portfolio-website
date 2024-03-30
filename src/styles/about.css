@@ -1,6 +1,27 @@
 .about-container {
   height: 100vh;
   box-shadow: -10px 0 30px rgb(0 0 0/5%);
-  /* box-shadow: -5px 0 3px -3px #00000030; */
-  /* only on left shadow */
+  background-color: #f7f7f7;
+}
+
+.about-text {
+  color: #868a9b;
+}
+.about-detail-header {
+  margin: 0;
+  background-color: #eaeaea;
+  justify-content: center;
+  display: flex;
+}
+.about-detail-header-title {
+  color: #000;
+  font-family: syne, Sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.3em;
+}
+.info-container {
+  padding-right: 5em;
+  color: #868a9b;
 }

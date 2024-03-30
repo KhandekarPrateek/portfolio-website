@@ -1,5 +1,6 @@
 import React from "react";
 import { Button, Col, Row } from "reactstrap";
+import InfoTable from "./InfoTable";
 const PDF_FILE_URL = `${window.location.origin}/portfolio.pdf`;
 
 const About = () => {
@@ -43,7 +44,7 @@ const About = () => {
           sm={8}
           className="d-flex justify-content-center align-items-center"
         >
-          <div>info table</div>
+          <InfoTable />
         </Col>
       </Row>
     </div>
