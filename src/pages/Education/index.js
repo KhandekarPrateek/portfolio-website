@@ -22,7 +22,9 @@ const Education = () => {
           className=" d-flex align-items-center  justify-content-center"
         >
           <div className="v-stack gap-3 w-100 ">
-            <Row className="education-titles border-3  w-75  ">Education</Row>
+            <Row className="education-titles border-3  w-75 align-items-center  justify-content-center ">
+              Education
+            </Row>
             <Row className=" w-75 ">
               <EducationTile
                 place="SGSITS Indore"
