@@ -14,10 +14,10 @@ const About = () => {
   };
   return (
     <div className="about-container " id="About">
-      <Row className="h-100 ">
+      <Row>
         <Col
           sm={4}
-          className="d-flex justify-content-center align-items-center"
+          className="d-flex justify-content-center align-items-center h-100"
         >
           <div>
             <h6 className="about-text">--Prateek Khandekar</h6>
@@ -42,7 +42,7 @@ const About = () => {
 
         <Col
           sm={8}
-          className="d-flex justify-content-center align-items-center"
+          className="d-flex justify-content-center align-items-center "
         >
           <InfoTable />
         </Col>
