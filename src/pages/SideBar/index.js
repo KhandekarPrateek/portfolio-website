@@ -23,8 +23,9 @@ const SideBar = () => {
           <Title Heading="Home" link="Home" />
           <Title Heading="About" link="About" />
           <Title Heading="Education" link="Education" />
-          <Title Heading="Skills" link="Skills" />
           <Title Heading="Projects" link="Projects" />
+          <Title Heading="Blogs" link="Blogs" />
+          <Title Heading="Skills" link="Skills" />
           <Title Heading="Contact" link="Contact" />
         </div>
       </div>
