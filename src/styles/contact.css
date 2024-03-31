@@ -1,6 +1,7 @@
 .contact-container {
   height: 100vh;
   box-shadow: -10px 0 30px rgb(0 0 0/5%);
+  background-color: #f7f7f7;
 }
 .contact-me {
   color: #000;
@@ -14,7 +15,6 @@
   margin-bottom: 10px;
   text-transform: uppercase;
   position: relative;
-  /* padding-left: 60px; */
 }
 .form-control:focus {
   box-shadow: none !important;
@@ -24,4 +24,26 @@
 .form-control {
   background-color: #eaeaea;
   color: #868a9b;
+}
+.divider-1 {
+  /* border-bottom: 1px solid #fff; */
+  /* background-color: #dadada; */
+  height: 1px;
+  margin: 0.5em 0px 1.5em;
+}
+
+.divider-1 span {
+  display: block;
+  width: 50px;
+  height: 2px;
+  background-color: #868a9b;
+}
+.heading-1 {
+  font-size: 1em;
+  letter-spacing: 0.08em;
+  font-weight: 300;
+  color: #868a9b;
+  text-shadow: 0 1px 1px #ffffff;
+  text-transform: uppercase;
+  font-family: syne, Sans-serif !important;
 }

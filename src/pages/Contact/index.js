@@ -38,7 +38,7 @@ const Contact = () => {
           console.log("FAILED...", error);
         }
       );
-    // e.target.reset();
+
     setFormData({
       from_name: "",
       from_email: "",
@@ -49,9 +49,16 @@ const Contact = () => {
 
   return (
     <Row className="contact-container " id="Contact">
-      <Col sm={6} className=" d-flex align-items-center ">
+      <Col sm={6} className=" d-flex align-items-center p-5">
         <div className="w-100">
-          <div className="contact-header">CONTACT</div>
+          {/* <div className="contact-header">CONTACT</div> */}
+          <div className="d-flex">
+            <div class="divider-1 me-3">
+              {" "}
+              <span></span>
+            </div>
+            <h3 class="heading-1">CONTACT</h3>
+          </div>
           <div className="contact-me pb-5">Get in Touch</div>
           <Form onSubmit={handleSubmit} ref={form} id="contact-form">
             <FormGroup>
@@ -65,8 +72,7 @@ const Contact = () => {
                 type="text"
                 onChange={handleChange}
                 value={formData.from_name}
-
-                // required
+                required
               />
             </FormGroup>{" "}
             <FormGroup>
@@ -90,10 +96,11 @@ const Contact = () => {
               <Input
                 id="subject"
                 name="subject"
-                placeholder="subject"
+                placeholder="Subject"
                 onChange={handleChange}
                 type="text"
                 value={formData.subject}
+                required
               />
             </FormGroup>{" "}
             <FormGroup>
@@ -107,9 +114,12 @@ const Contact = () => {
                 type="textarea"
                 onChange={handleChange}
                 value={formData.message}
+                required
               />
             </FormGroup>{" "}
-            <Button>Submit</Button>
+            <Button size="lg" className="w-100">
+              Submit
+            </Button>
           </Form>
         </div>
       </Col>
