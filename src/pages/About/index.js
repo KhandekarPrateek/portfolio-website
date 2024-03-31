@@ -16,17 +16,17 @@ const About = () => {
     <Row className="about-container " id="About">
       <Col
         sm={6}
-        className="d-flex justify-content-center align-items-center h-100 p-5"
+        className="d-flex justify-content-center align-items-center h-100 p-5 mb-5"
       >
         <div>
-          <div className="d-flex">
+          <div className="d-flex prateek-khandekar-about">
             <div class="divider-1 me-3">
               {" "}
               <span></span>
             </div>
             <h3 class="heading-1">PRATEEK KHANDEKAR</h3>
           </div>
-          <h1>React developer based in Indore,MP</h1>
+          <h1 className="about-title">Software Developer based in Indore,MP</h1>
           <p className="about-text">
             Welcome to my website! I'm a Computer Science Engineering student
             hailing from Indore, Madhya Pradesh. With a keen interest in web
@@ -41,7 +41,7 @@ const About = () => {
             }}
             size="lg"
           >
-            Download Cv
+            Download CV
           </Button>
         </div>
       </Col>

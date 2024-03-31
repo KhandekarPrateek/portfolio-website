@@ -1,6 +1,7 @@
 .education-conatiner {
   /* height: 100vh; */
   /* why is height 100vh causing erros in mobile view */
+  box-shadow: -10px 0 30px rgb(0 0 0/5%);
 }
 .education-titles {
   background-color: #eaeaea;
