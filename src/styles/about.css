@@ -24,3 +24,11 @@
 .info-container {
   color: #868a9b;
 }
+/* affects the buttons in about and contact me section */
+.btn-secondary {
+  background-color: #666;
+  border-radius: 0%;
+}
+.btn-secondary:hover {
+  background-color: black;
+}
