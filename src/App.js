@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Education from "./pages/Education";
+import Skills from "./Skills";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
           <Home />
           <About />
           <Education />
+          <Skills />
           <Contact />
         </Col>
       </Row>

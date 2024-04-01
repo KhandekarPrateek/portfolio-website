@@ -13,7 +13,7 @@ const About = () => {
     aTag.remove();
   };
   return (
-    <Row className="about-container " id="About">
+    <Row className="about-container g-0  " id="About">
       <Col
         sm={6}
         className="d-flex justify-content-center align-items-center h-100 p-5 mb-5"

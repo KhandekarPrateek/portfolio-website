@@ -48,7 +48,7 @@ const Contact = () => {
   };
 
   return (
-    <Row className="contact-container " id="Contact">
+    <Row className="contact-container g-0 " id="Contact">
       <Col sm={6} className=" d-flex align-items-center p-5">
         <div className="w-100">
           {/* <div className="contact-header">CONTACT</div> */}
