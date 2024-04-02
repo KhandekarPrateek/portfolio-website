@@ -6,16 +6,16 @@
   padding-top: 40px;
 }
 .content-box {
-  width: 100vw;
-  display: flex;
-  align-items: center;
+  /* width: 100vw;
+  display: flex; */
+  /* align-items: center; */
 }
 .container-skills {
-  width: 100vw;
+  /* width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; */
   /* justify-content: center; */
 }
 /* .card {
@@ -25,3 +25,22 @@
   align-items: center;
   justify-content: center;
 } */
+.skillsTab-container {
+  background-color: #f7f7f7;
+  color: #868a9b;
+}
+.slick-prev {
+  /* left: 6% !important; */
+  z-index: 1;
+  color: black;
+}
+.slick-prev::before {
+  color: black;
+}
+.slick-next {
+  right: 3% !important;
+  z-index: 1;
+}
+.slick-next::before {
+  color: black;
+}

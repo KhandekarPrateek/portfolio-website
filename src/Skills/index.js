@@ -1,6 +1,7 @@
 import React from "react";
 import { Col, Row } from "reactstrap";
-import Scroll from "./Scroll";
+
+import SimpleSlider from "./SimpleSlider";
 
 const Skills = () => {
   return (
@@ -17,8 +18,8 @@ const Skills = () => {
           <h1 className="about-title">Technical Proficiencies</h1>
         </div>
       </Row>
-      <Row>
-        <Scroll />
+      <Row className="d-flex align-items-center justify-content-center m-0">
+        <SimpleSlider />
       </Row>
     </Row>
   );
