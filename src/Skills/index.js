@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Row } from "reactstrap";
+import { Row } from "reactstrap";
 
 import SimpleSlider from "./SimpleSlider";
 

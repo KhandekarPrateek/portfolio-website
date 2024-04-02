@@ -1,6 +1,11 @@
 import React from "react";
 import Slider from "react-slick";
 import { Row } from "reactstrap";
+import SkillsTab from "./SkillsTab";
+import { FaGitAlt } from "react-icons/fa";
+import { FaDatabase } from "react-icons/fa";
+import { FaReact } from "react-icons/fa";
+import { IoLogoFirebase } from "react-icons/io5";
 const SimpleSlider = () => {
   var settings = {
     dots: false,
@@ -13,25 +18,46 @@ const SimpleSlider = () => {
   };
 
   return (
-    <Row className="d-flex align-items-center justify-content-center m-0">
+    <Row className="d-flex align-items-center justify-content-center  ">
       <Slider {...settings}>
-        <div className="d-flex align-items-center justify-content-center m-0">
-          <h3>1</h3>
+        <div className="d-flex align-items-center justify-content-center  ">
+          <SkillsTab
+            header={"Frontend"}
+            icon={<FaReact size={50} />}
+            skillList={[
+              "HTML",
+              "CSS",
+              "JavaScript",
+              "React",
+              "Bootstrap",
+              "Reactstrap",
+            ]}
+          />
         </div>
-        <div className="d-flex align-items-center justify-content-center m-0">
-          <h3>2</h3>
+
+        <div className="d-flex align-items-center justify-content-center ">
+          <SkillsTab
+            header={"Version Control"}
+            icon={<FaGitAlt size={50} />}
+            skillList={["Git", "GitHub"]}
+          />
         </div>
-        <div className="d-flex align-items-center justify-content-center m-0">
-          <h3>3</h3>
+        <div className="d-flex align-items-center justify-content-center ">
+          <SkillsTab
+            header={"Backend Development"}
+            icon={<IoLogoFirebase size={50} />}
+            skillList={[
+              "Firestore Database",
+              "Authentication and Authorization",
+            ]}
+          />
         </div>
-        <div className="d-flex align-items-center justify-content-center m-0">
-          <h3>4</h3>
-        </div>
-        <div className="d-flex align-items-center justify-content-center m-0">
-          <h3>5</h3>
-        </div>
-        <div className="d-flex align-items-center justify-content-center m-0">
-          <h3>6</h3>
+        <div className="d-flex align-items-center justify-content-center ">
+          <SkillsTab
+            header={"Data Structures And Algorithms"}
+            icon={<FaDatabase size={50} />}
+            skillList={["Proficient in C++"]}
+          />
         </div>
       </Slider>
     </Row>
