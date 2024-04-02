@@ -15,6 +15,32 @@ const SimpleSlider = () => {
     slidesToScroll: 1,
 
     intialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 0,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   return (
@@ -37,19 +63,19 @@ const SimpleSlider = () => {
 
         <div className="d-flex align-items-center justify-content-center ">
           <SkillsTab
-            header={"Version Control"}
-            icon={<FaGitAlt size={50} />}
-            skillList={["Git", "GitHub"]}
-          />
-        </div>
-        <div className="d-flex align-items-center justify-content-center ">
-          <SkillsTab
             header={"Backend Development"}
             icon={<IoLogoFirebase size={50} />}
             skillList={[
               "Firestore Database",
               "Authentication and Authorization",
             ]}
+          />
+        </div>
+        <div className="d-flex align-items-center justify-content-center ">
+          <SkillsTab
+            header={"Version Control"}
+            icon={<FaGitAlt size={50} />}
+            skillList={["Git", "GitHub"]}
           />
         </div>
         <div className="d-flex align-items-center justify-content-center ">
