@@ -2,6 +2,8 @@
   /* height: 100vh; */
   box-shadow: -10px 0 30px rgb(0 0 0/5%);
   background-color: #f7f7f7;
+  padding-top: 50px;
+  padding-bottom: 60px;
 }
 
 .about-text {

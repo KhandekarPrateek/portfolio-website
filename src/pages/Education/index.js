@@ -4,18 +4,17 @@ import { Col, Row } from "reactstrap";
 const Education = () => {
   return (
     <div className="education-conatiner p-5 " id="Education">
-      <Row>
-        <div className="w-100">
-          <div className="d-flex timeline-small-header">
-            <div class="divider-1 me-3">
-              {" "}
-              <span></span>
-            </div>
-            <h3 class="heading-1">TIMELINE</h3>
+      <div className="w-100 headers-timeline">
+        <div className="d-flex timeline-small-header">
+          <div class="divider-1 me-3">
+            {" "}
+            <span></span>
           </div>
-          <div className="contact-me pb-5 timeline-period">Timeline Period</div>
+          <h3 class="heading-1">TIMELINE</h3>
         </div>
-      </Row>
+        <div className="contact-me pb-5 timeline-period">Timeline Period</div>
+      </div>
+
       <Row>
         <Col
           sm={6}
