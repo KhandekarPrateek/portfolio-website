@@ -13,7 +13,8 @@ const SimpleSlider = () => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-
+    autoplay: true,
+    // autoplaySpeed: 700,
     intialSlide: 0,
     responsive: [
       {
@@ -44,7 +45,7 @@ const SimpleSlider = () => {
   };
 
   return (
-    <Row className="d-flex align-items-center justify-content-center mb-5   ">
+    <Row className="d-flex align-items-center justify-content-center mb-5 slider  ">
       <Slider {...settings}>
         <div className="d-flex align-items-center justify-content-center  ">
           <SkillsTab

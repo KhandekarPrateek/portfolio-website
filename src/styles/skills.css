@@ -10,19 +10,18 @@
   background-color: #f7f7f7;
   color: #868a9b;
 }
-.slick-prev {
-  z-index: 1;
-  color: black;
-}
+
 .slick-prev::before {
-  color: black;
+  /* color: black; */
+  display: none;
 }
 .slick-next {
   /* right: 3% !important; */
-  z-index: 1;
+  /* z-index: 1; */
 }
 .slick-next::before {
-  color: black;
+  /* color: black; */
+  display: none;
 }
 
 .skill-icon:hover {
@@ -59,4 +58,27 @@
 }
 .hover-effect .skill-icon {
   transition: color 0.3s ease; /* Add transition property */
+}
+
+.slider .slick-arrow {
+  position: absolute;
+  top: 50%;
+  /* margin: -20px 0px 0px 0px; */
+  z-index: 10;
+  font-size: 0;
+  width: 30px;
+  height: 30px;
+}
+.slider .slick-arrow.slick-prev {
+  left: 0;
+  background: url("https://img.icons8.com/ios/50/000000/long-arrow-left.png") 0
+    0 / 100% no-repeat;
+}
+.slider .slick-arrow.slick-next {
+  right: 0;
+  background: url("https://img.icons8.com/ios/50/000000/long-arrow-right.png") 0
+    0 / 100% no-repeat;
+}
+.slider .slick-arrow.slick-disabled {
+  opacity: 0.2;
 }

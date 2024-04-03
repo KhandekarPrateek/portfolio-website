@@ -51,7 +51,6 @@ const Contact = () => {
     <Row className="contact-container g-0 " id="Contact">
       <Col sm={6} className=" d-flex align-items-center p-5">
         <div className="w-100">
-          {/* <div className="contact-header">CONTACT</div> */}
           <div className="d-flex">
             <div class="divider-1 me-3">
               {" "}
@@ -123,7 +122,21 @@ const Contact = () => {
           </Form>
         </div>
       </Col>
-      <Col sm={6}>map</Col>
+      <Col
+        sm={6}
+        className=" d-flex align-items-center justify-content-center p-5"
+      >
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3681.19504584786!2d75.82684417544607!3d22.68378197888592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fc386fff7979%3A0x6347990b6c06bc9f!2sGopur%20Square%2C%20Pre%20Conco%20Nagar%2C%20Vaishali%20Nagar%2C%20Indore%2C%20Madhya%20Pradesh%20452012!5e0!3m2!1sen!2sin!4v1712124676820!5m2!1sen!2sin"
+          width="600"
+          height="450"
+          style={{ border: "0" }}
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="my-map"
+        ></iframe>
+      </Col>
     </Row>
   );
 };
