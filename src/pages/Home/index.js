@@ -1,6 +1,6 @@
 import React from "react";
 import { Col, Row } from "reactstrap";
-import pic from "../../pic.jpeg";
+import pic1 from "../../pic-modified.jpeg";
 
 const Home = () => {
   return (
@@ -14,7 +14,7 @@ const Home = () => {
           md={5}
           className="d-flex justify-content-center align-items-center"
         >
-          <img src={pic} alt="" className="rounded-circle image-home p-3" />
+          <img src={pic1} alt="" className="rounded-circle image-home " />
         </Col>
 
         <Col

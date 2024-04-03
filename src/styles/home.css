@@ -44,4 +44,6 @@
 .image-home {
   width: 75%;
   height: auto;
+  border: 20px double;
+  box-shadow: 1px 1px 10px 10px #868a9b;
 }
