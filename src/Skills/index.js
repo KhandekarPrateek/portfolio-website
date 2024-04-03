@@ -5,7 +5,7 @@ import SimpleSlider from "./SimpleSlider";
 
 const Skills = () => {
   return (
-    <Row className="skills-container g-0" id="Skills">
+    <Row className="skills-container g-0 py-5" id="Skills">
       <Row className="d-flex justify-content-center align-items-center h-100 p-5 mb-5 ">
         <div>
           <div className="d-flex skills-header">

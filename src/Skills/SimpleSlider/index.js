@@ -8,7 +8,6 @@ import { FaReact } from "react-icons/fa";
 import { IoLogoFirebase } from "react-icons/io5";
 const SimpleSlider = () => {
   var settings = {
-    dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 3,
