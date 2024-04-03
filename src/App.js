@@ -5,7 +5,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Education from "./pages/Education";
-import Skills from "./Skills";
+import Skills from "./pages/Skills";
 
 const App = () => {
   return (

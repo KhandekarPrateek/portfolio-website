@@ -27,3 +27,7 @@
   -webkit-text-stroke-color: #000;
   stroke: #000;
 }
+.image-home {
+  width: 75%;
+  height: auto;
+}
