@@ -6,7 +6,7 @@
 .home-name {
   color: #fff;
   font-family: archivo black, Sans-serif;
-  font-size: 5em;
+  font-size: 7em;
   font-weight: 800;
   text-transform: uppercase;
   line-height: 1.1em;
@@ -15,10 +15,18 @@
   -webkit-text-stroke-color: #000;
   stroke: #000;
 }
+
+/* Media query to reduce font size on smaller screens */
+@media (max-width: 576px) {
+  .home-name {
+    font-size: 3rem; /* Reduce font size on smaller screens */
+  }
+}
+
 .home-surname {
   color: #000;
   font-family: archivo black, Sans-serif;
-  font-size: 5em;
+  font-size: 7em;
   font-weight: 800;
   text-transform: uppercase;
   line-height: 1.1em;
@@ -27,6 +35,12 @@
   -webkit-text-stroke-color: #000;
   stroke: #000;
 }
+@media (max-width: 576px) {
+  .home-surname {
+    font-size: 3rem; /* Reduce font size on smaller screens */
+  }
+}
+
 .image-home {
   width: 75%;
   height: auto;
