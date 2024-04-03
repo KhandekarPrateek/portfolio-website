@@ -24,14 +24,39 @@
 .slick-next::before {
   color: black;
 }
-.skills-tab {
-  background-color: #f7f7f7;
-  color: #868a9b;
-  flex-direction: column;
-}
+
 .skill-icon:hover {
   color: #000;
 }
 .skill-header {
   color: #000;
+  height: 75px;
+}
+.card-skills-tab {
+  height: 400px;
+  background-color: #f7f7f7;
+  color: #868a9b;
+  border-bottom: 7px solid rgba(0, 0, 0, 0.1);
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+
+  border-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.1) 75%,
+      transparent 50%
+    )
+    100% 1;
+}
+.bar-skills-tab {
+  height: 100%;
+  background: #d9d9d9;
+
+  overflow: hidden;
+}
+.hover-effect:hover .skill-icon {
+  color: black;
+}
+.hover-effect .skill-icon {
+  transition: color 0.3s ease; /* Add transition property */
 }

@@ -18,7 +18,7 @@ const Skills = () => {
           <h1 className="about-title">Technical Proficiencies</h1>
         </div>
       </Row>
-      <Row className="d-flex align-items-center justify-content-center m-0">
+      <Row className="d-flex align-items-center justify-content-center mb-5 h-100 px-5">
         <SimpleSlider />
       </Row>
     </Row>

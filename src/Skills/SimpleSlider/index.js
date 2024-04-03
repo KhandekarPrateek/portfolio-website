@@ -8,7 +8,7 @@ import { FaReact } from "react-icons/fa";
 import { IoLogoFirebase } from "react-icons/io5";
 const SimpleSlider = () => {
   var settings = {
-    dots: false,
+    dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 3,
@@ -44,7 +44,7 @@ const SimpleSlider = () => {
   };
 
   return (
-    <Row className="d-flex align-items-center justify-content-center  ">
+    <Row className="d-flex align-items-center justify-content-center mb-5   ">
       <Slider {...settings}>
         <div className="d-flex align-items-center justify-content-center  ">
           <SkillsTab
