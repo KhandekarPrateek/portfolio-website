@@ -127,7 +127,7 @@ const Contact = () => {
                 />
               </FormGroup>{" "}
               <Button size="lg" className="w-100">
-                Submit
+                Submit Message
               </Button>
             </Form>
           </div>

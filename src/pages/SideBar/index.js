@@ -22,7 +22,7 @@ const SideBar = () => {
         <div className="vstack gap-3">
           <Title Heading="Home" link="Home" />
           <Title Heading="About" link="About" />
-          <Title Heading="Education" link="Education" />
+          <Title Heading="Timeline" link="Education" />
           <Title Heading="Projects" link="Projects" />
           <Title Heading="Blogs" link="Blogs" />
           <Title Heading="Skills" link="Skills" />
