@@ -1,6 +1,6 @@
 import React from "react";
 import { Col, Row } from "reactstrap";
-import pic1 from "../../pic-modified.jpeg";
+import pic1 from "../../assets/pic-modified.jpeg";
 
 const Home = () => {
   return (

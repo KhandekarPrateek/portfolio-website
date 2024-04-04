@@ -6,6 +6,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Education from "./pages/Education";
 import Skills from "./pages/Skills";
+import Projects from "./pages/Projects";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
           <Home />
           <About />
           <Education />
+          <Projects />
           <Skills />
           <Contact />
         </Col>
