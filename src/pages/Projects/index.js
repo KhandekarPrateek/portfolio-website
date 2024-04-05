@@ -30,7 +30,7 @@ const Projects = () => {
         <Accordion open={open} toggle={toggle}>
           <AccordionItem>
             <AccordionHeader targetId="1">TENZIES</AccordionHeader>
-            <AccordionBody accordionId="1">
+            <AccordionBody accordionId="1" className="tenzies-accordion  ">
               <strong>This is the first item&#39;s accordion body.</strong>
               You can modify any of this with custom CSS or overriding our
               default variables. It&#39;s also worth noting that just about any
@@ -40,7 +40,7 @@ const Projects = () => {
           </AccordionItem>
           <AccordionItem>
             <AccordionHeader targetId="2">MEME GENERATOR</AccordionHeader>
-            <AccordionBody accordionId="2">
+            <AccordionBody accordionId="2" className="meme-accordion">
               <strong>This is the second item&#39;s accordion body.</strong>
               You can modify any of this with custom CSS or overriding our
               default variables. It&#39;s also worth noting that just about any
@@ -50,7 +50,7 @@ const Projects = () => {
           </AccordionItem>
           <AccordionItem>
             <AccordionHeader targetId="3">HANGMAN</AccordionHeader>
-            <AccordionBody accordionId="3">
+            <AccordionBody accordionId="3" className="hangman-accordion">
               <strong>This is thedion body.</strong>
               You can modify any of this with custom CSS or overriding our
               default variables. It&#39;s also worth noting that just about any
@@ -60,7 +60,7 @@ const Projects = () => {
           </AccordionItem>
           <AccordionItem>
             <AccordionHeader targetId="4">ARCADE MANIA</AccordionHeader>
-            <AccordionBody accordionId="4">
+            <AccordionBody accordionId="4" className="arcade-mania-accordion">
               <strong>This is the first item&#39;s accordion body.</strong>
               You can modify any of this with custom CSS or overriding our
               default variables. It&#39;s also worth noting that just about any
@@ -70,7 +70,7 @@ const Projects = () => {
           </AccordionItem>
           <AccordionItem>
             <AccordionHeader targetId="5">MONSTER'S ROLODEX</AccordionHeader>
-            <AccordionBody accordionId="5">
+            <AccordionBody accordionId="5" className="rolodex-accordion">
               <strong>This is the first item&#39;s accordion body.</strong>
               You can modify any of this with custom CSS or overriding our
               default variables. It&#39;s also worth noting that just about any
@@ -80,7 +80,10 @@ const Projects = () => {
           </AccordionItem>
           <AccordionItem>
             <AccordionHeader targetId="6">SCRIBBLE SPHERE</AccordionHeader>
-            <AccordionBody accordionId="6">
+            <AccordionBody
+              accordionId="6"
+              className="scribble-sphere-accordion" //change bg image to notes app
+            >
               <strong>This is the first item&#39;s accordion body.</strong>
               You can modify any of this with custom CSS or overriding our
               default variables. It&#39;s also worth noting that just about any
