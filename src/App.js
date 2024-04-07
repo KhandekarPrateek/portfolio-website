@@ -7,24 +7,27 @@ import Contact from "./pages/Contact";
 import Education from "./pages/Education";
 import Skills from "./pages/Skills";
 import Projects from "./pages/Projects";
+import { BrowserRouter } from "react-router-dom";
 
 const App = () => {
   return (
-    <div>
-      <Row>
-        <Col sm={2}>
-          <SideBar />
-        </Col>
-        <Col sm={10}>
-          <Home />
-          <About />
-          <Education />
-          <Projects />
-          <Skills />
-          <Contact />
-        </Col>
-      </Row>
-    </div>
+    <BrowserRouter>
+      <div>
+        <Row>
+          <Col sm={2}>
+            <SideBar />
+          </Col>
+          <Col sm={10}>
+            <Home />
+            <About />
+            <Education />
+            <Projects />
+            <Skills />
+            <Contact />
+          </Col>
+        </Row>
+      </div>
+    </BrowserRouter>
   );
 };
 
