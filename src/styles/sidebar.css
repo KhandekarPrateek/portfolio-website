@@ -9,8 +9,10 @@
   .sidebar-container {
     height: 100vh;
     position: fixed;
-
-    left: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* left: 8%; */
     overflow-x: hidden;
     overflow: auto;
     /* box-shadow: 0 0 30px rgb(0 0 0/5%); */

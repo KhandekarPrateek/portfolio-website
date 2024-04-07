@@ -1,23 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 import Title from "./Title";
 import { Row } from "reactstrap";
 
 const SideBar = () => {
-  // const [showMenu, setShowMenu] = useState(false);
-  // const toggleMenu = () => {
-  //   setShowMenu(!showMenu);
-  // };
-  // const closeOnMobile = () => {
-  //   if (window.innerWidth <= 700) {
-  //     setShowMenu(false);
-  //   }
-  // };
   return (
     <>
-      <div className="sidebar-container  d-flex align-items-center justify-content-center ">
-        {/* <Row className="">
+      <div className="sidebar-container  d-flex flex-column align-items-center justify-content-center ">
+        <Row>
           <h1>PRATEEK</h1>
-        </Row> */}
+        </Row>
 
         <div className="vstack gap-3">
           <Title Heading="Home" link="Home" />
