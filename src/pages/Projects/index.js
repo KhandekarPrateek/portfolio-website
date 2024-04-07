@@ -60,6 +60,26 @@ const Projects = () => {
             </AccordionBody>
           </AccordionItem>
           <AccordionItem>
+            <AccordionHeader targetId="4">
+              <div className="accordion-title"> ARCADE MANIA</div>
+            </AccordionHeader>
+            <AccordionBody
+              accordionId="4"
+              className="arcade-mania-accordion my-accordion"
+            >
+              <ProjectTile
+                projectImage={ArcadeMania}
+                ButtonText="Visit Website"
+                description={[
+                  "Developed a collection of Hangman, Tenzies, and Meme Generator games using React Router DOM.",
+                  "Ensured full responsiveness across various devices and screen sizes, enhancing accessibility.",
+                  "Integrated React Router DOM for seamless navigation between different game modules, providing a smooth user experience.",
+                ]}
+                codeLink="https://prateeksarcademania.web.app/"
+              />
+            </AccordionBody>
+          </AccordionItem>
+          <AccordionItem>
             <AccordionHeader targetId="1">
               <div className="accordion-title">TENZIES</div>
             </AccordionHeader>
@@ -125,26 +145,7 @@ const Projects = () => {
               />
             </AccordionBody>
           </AccordionItem>
-          <AccordionItem>
-            <AccordionHeader targetId="4">
-              <div className="accordion-title"> ARCADE MANIA</div>
-            </AccordionHeader>
-            <AccordionBody
-              accordionId="4"
-              className="arcade-mania-accordion my-accordion"
-            >
-              <ProjectTile
-                projectImage={ArcadeMania}
-                ButtonText="Visit Website"
-                description={[
-                  "Developed a collection of Hangman, Tenzies, and Meme Generator games using React Router DOM.",
-                  "Ensured full responsiveness across various devices and screen sizes, enhancing accessibility.",
-                  "Integrated React Router DOM for seamless navigation between different game modules, providing a smooth user experience.",
-                ]}
-                codeLink="https://prateeksarcademania.web.app/"
-              />
-            </AccordionBody>
-          </AccordionItem>
+
           <AccordionItem>
             <AccordionHeader targetId="5">
               <div className="accordion-title">MONSTER'S ROLODEX</div>

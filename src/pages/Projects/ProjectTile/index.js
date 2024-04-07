@@ -1,9 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Col, Row, Button } from "reactstrap";
 const ProjectTile = ({ projectImage, ButtonText, description, codeLink }) => {
-  const redirectButton = () => {
-    window.location.href = codeLink;
-  };
   return (
     <Row className="h-100 w-100 mt-1 ">
       <Col sm={7} className="d-flex justify-content-center align-items-center ">
@@ -18,11 +16,15 @@ const ProjectTile = ({ projectImage, ButtonText, description, codeLink }) => {
         className="d-flex justify-content-center align-items-center flex-column  "
       >
         <div className="w-100">
-          <img src={projectImage} className="img-fluid border border-5  " />
+          <img
+            src={projectImage}
+            className="img-fluid border border-5  "
+            alt=""
+          />
         </div>
-        <Button className="mt-5" onClick={redirectButton}>
-          {ButtonText}
-        </Button>
+        <Link to={codeLink} target="_blank" className="mt-5">
+          <Button>{ButtonText}</Button>
+        </Link>
       </Col>
     </Row>
   );
