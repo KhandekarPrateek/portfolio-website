@@ -55,6 +55,7 @@ const Projects = () => {
                   "Implemented dark mode toggling feature using React Helmet for enhanced user customization.",
                   "Incorporated TinyMCE code editor for rich text editing capabilities, offering a user-friendly note-taking experience.",
                 ]}
+                codeLink="https://github.com/KhandekarPrateek/Notes-App/tree/master"
               />
             </AccordionBody>
           </AccordionItem>
