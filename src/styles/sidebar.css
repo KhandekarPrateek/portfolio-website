@@ -1,6 +1,8 @@
 .sidebar-title {
   color: #868a9b !important;
   text-decoration: none;
+  font-size: large;
+  font-weight: 600;
 }
 .sidebar-title:hover {
   color: black !important;
