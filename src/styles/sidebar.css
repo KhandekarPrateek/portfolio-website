@@ -39,3 +39,22 @@
     float: none;
   }
 }
+.mobile-view {
+  display: none;
+}
+@media (max-width: 600px) {
+  .desktop-view {
+    display: none;
+  }
+
+  .mobile-view {
+    display: flex;
+    align-items: center;
+  }
+  .HamburgerMenu {
+    color: black;
+    position: absolute;
+    right: 2%;
+    cursor: pointer;
+  }
+}
