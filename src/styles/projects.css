@@ -5,102 +5,7 @@
   /* height: 50vh; */
   display: flex;
 }
-/* .tenzies-accordion {
-  height: 50vh;
-  position: relative;
-}
-.tenzies-accordion::before {
-  background-image: url("../assets/tenzies.png");
-  opacity: 0.25;
-  background-size: cover;
-  background-position: center;
-  content: "";
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-}
-.meme-accordion {
-  height: 70vh;
-  position: relative;
-}
-.meme-accordion::before {
-  background-image: url("../assets/Meme.png");
-  opacity: 0.25;
-  background-size: cover;
-  background-position: center;
-  content: "";
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-}
-.hangman-accordion {
-  height: 70vh;
-  position: relative;
-}
-.hangman-accordion::before {
-  background-image: url("../assets/HangMan.png");
-  opacity: 0.25;
-  background-size: cover;
-  background-position: center;
-  content: "";
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-}
-.arcade-mania-accordion {
-  height: 70vh;
-  position: relative;
-}
-.arcade-mania-accordion::before {
-  background-image: url("../assets/ArcadeMania.png");
-  opacity: 0.25;
-  background-size: cover;
-  background-position: center;
-  content: "";
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-}
-.rolodex-accordion {
-  height: 70vh;
-  position: relative;
-}
-.rolodex-accordion::before {
-  background-image: url("../assets/Rolodex.png");
-  opacity: 0.25;
-  background-size: cover;
-  background-position: center;
-  content: "";
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-}
-.scribble-sphere-accordion {
-  height: 70vh;
-  position: relative;
-}
-.scribble-sphere-accordion::before {
-  background-image: url("../assets/Rolodex.png");
-  opacity: 0.25;
-  background-size: cover;
-  background-position: center;
-  content: "";
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-} */
+
 .accordion-button:not(.collapsed) {
   color: black !important;
   background-color: #f7f7f7;
@@ -117,4 +22,6 @@
   font-size: 17px;
   color: black;
   font-weight: 700;
+  /* background-color: #eaeaea; */
+  padding: 25px 30px;
 }
