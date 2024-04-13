@@ -1,9 +1,10 @@
 import React from "react";
 import { Button, Col, Row } from "reactstrap";
 import InfoTable from "./InfoTable";
-const PDF_FILE_URL = `${window.location.origin}/portfolio.pdf`;
 
 const About = () => {
+  const PDF_FILE_URL = `${window.location.origin}/portfolio.pdf`;
+
   const handleDownloadCv = (url) => {
     const aTag = document.createElement("a");
     aTag.href = url;
