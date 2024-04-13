@@ -1,13 +1,35 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Col, Row, Button } from "reactstrap";
-const ProjectTile = ({ projectImage, ButtonText, description, codeLink }) => {
+const ProjectTile = ({
+  projectImage,
+  ButtonText,
+  description,
+  codeLink,
+  skills,
+}) => {
   return (
     <Row className="h-100 w-100 mt-1 ">
-      <Col sm={7} className="d-flex justify-content-center align-items-center ">
-        <div>
+      <></>
+      <Col sm={7} className="ps-5">
+        <p className="fw-bold">What I made...</p>
+        <div className="ps-5 text-secondary">
           {description.map((ele) => {
-            return <li>{ele}</li>;
+            return <li className="list-style-bullets">{ele}</li>;
+          })}
+        </div>
+        <p className="fw-bold mt-4">How I made it...</p>
+        <div className="ps-5">
+          {skills?.map((ele, index) => {
+            return (
+              <Button
+                color="secondary"
+                outline
+                className="p-2 m-1 w-25 pe-none"
+              >
+                {ele}
+              </Button>
+            );
           })}
         </div>
       </Col>
@@ -23,7 +45,9 @@ const ProjectTile = ({ projectImage, ButtonText, description, codeLink }) => {
           />
         </div>
         <Link to={codeLink} target="_blank" className="mt-5">
-          <Button>{ButtonText}</Button>
+          <Button size="lg" className="py-3 px-4">
+            {ButtonText}
+          </Button>
         </Link>
       </Col>
     </Row>

@@ -57,24 +57,20 @@ const Education = () => {
             <Row className="education-titles border-3  w-100 align-items-center  justify-content-center ">
               ACHIEVEMENTS
             </Row>
-            <Row className=" w-100 ">
+            <Row className="w-100">
+              <EducationTile place="JEE Percentile" marks="97.74" year="2022" />
+            </Row>
+            <Row className="w-100">
               <EducationTile
-                place="Cbse 10th Board"
-                marks="94.5%"
-                year="2019"
+                place="Member of SGSITS Computer Club"
+                marks="Selected in top five percent of the department"
+                year="2022"
               />
             </Row>
-            <Row className=" w-100 ">
+            <Row className="w-100">
               <EducationTile
-                place="Cbse 10th Board"
-                marks="94.5%"
-                year="2019"
-              />
-            </Row>
-            <Row className=" w-100 ">
-              <EducationTile
-                place="Cbse 10th Board"
-                marks="94.5%"
+                place="National Recognition for Secondary Education"
+                marks="By Government of India"
                 year="2019"
               />
             </Row>
