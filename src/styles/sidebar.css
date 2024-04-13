@@ -50,11 +50,25 @@
   .mobile-view {
     display: flex;
     align-items: center;
+    position: fixed;
+
+    width: inherit;
+    background-color: white;
+    overflow: hidden;
+    z-index: 2;
   }
   .HamburgerMenu {
     color: black;
     position: absolute;
     right: 2%;
+    cursor: pointer;
+  }
+  /* //hehehe */
+  .close-btn {
+    color: black;
+    position: absolute;
+    right: 2%;
+    top: 0;
     cursor: pointer;
   }
 }

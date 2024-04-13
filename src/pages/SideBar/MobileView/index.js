@@ -7,16 +7,15 @@ import { IoCloseSharp } from "react-icons/io5";
 const MobileView = () => {
   const [click, setclick] = useState(false);
 
-  const closeMenu = () => setclick(false);
   return (
     <div className="mobile-view">
       <div className=" sidebar-container  d-flex flex-column align-items-center justify-content-center ">
         <Row className="d-flex justify-content-center align-items-center ">
-          <h1>PRATEEK</h1>
+          <h1 className="fw-bolder pt-2">PRATEEK</h1>
         </Row>
         {click ? (
           <IoCloseSharp
-            className="HamburgerMenu"
+            className="close-btn"
             size={35}
             onClick={() => setclick(!click)}
           />
