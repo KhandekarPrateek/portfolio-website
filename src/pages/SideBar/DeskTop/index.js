@@ -3,6 +3,7 @@ import Title from "../Title/index";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 import { Button } from "reactstrap";
+import { Link } from "react-router-dom";
 
 const DeskTop = () => {
   const PDF_FILE_URL = `${window.location.origin}/portfolio.pdf`;
@@ -41,15 +42,24 @@ const DeskTop = () => {
         <hr className="mx-5 my-2" />
 
         <div className="d-flex ms-4 mt-5">
-          <Button outline color="secondary" className="mx-1">
-            <FaGithub size={25} className="mx-2" />
-          </Button>
-          <Button outline color="secondary" className="mx-1">
-            <FaLinkedin size={25} className="mx-2" />
-          </Button>
-          <Button outline color="secondary" className="mx-1">
-            <SiLeetcode size={25} className="mx-2" />
-          </Button>
+          <Link to="https://github.com/KhandekarPrateek" target="_blank">
+            <Button outline color="secondary" className="mx-1">
+              <FaGithub size={25} className="mx-2" />
+            </Button>
+          </Link>
+          <Link
+            to="https://www.linkedin.com/in/prateek-khandekar-54966824b/"
+            target="_blank"
+          >
+            <Button outline color="secondary" className="mx-1">
+              <FaLinkedin size={25} className="mx-2" />
+            </Button>
+          </Link>
+          <Link to="https://leetcode.com/prateekk14/" target="_blank">
+            <Button outline color="secondary" className="mx-1">
+              <SiLeetcode size={25} className="mx-2" />
+            </Button>
+          </Link>
         </div>
       </div>
       {/* </div> */}

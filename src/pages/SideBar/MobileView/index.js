@@ -5,6 +5,7 @@ import { IoMenu } from "react-icons/io5";
 import { IoCloseSharp } from "react-icons/io5";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
+import { Link } from "react-router-dom";
 
 const MobileView = () => {
   const [click, setclick] = useState(false);
@@ -67,15 +68,25 @@ const MobileView = () => {
               <hr className="w-50 py-0 my-0" />
             </div>
             <div className="d-flex justify-content-center ">
-              <Button outline color="secondary" className="mx-1" size="sm">
-                <FaGithub size={18} className="mx-2" />
-              </Button>
-              <Button outline color="secondary" className="mx-1" size="sm">
-                <FaLinkedin size={18} className="mx-2" />
-              </Button>
-              <Button outline color="secondary" className="mx-1" size="sm">
-                <SiLeetcode size={18} className="mx-2" />
-              </Button>
+              <Link to="https://github.com/KhandekarPrateek" target="_blank">
+                <Button outline color="secondary" className="mx-1" size="sm">
+                  <FaGithub size={18} className="mx-2" />
+                </Button>
+              </Link>
+              <Link
+                to="https://www.linkedin.com/in/prateek-khandekar-54966824b/"
+                target="_blank"
+              >
+                <Button outline color="secondary" className="mx-1" size="sm">
+                  <FaLinkedin size={18} className="mx-2" />
+                </Button>
+              </Link>
+
+              <Link to="https://leetcode.com/prateekk14/" target="_blank">
+                <Button outline color="secondary" className="mx-1" size="sm">
+                  <SiLeetcode size={18} className="mx-2" />
+                </Button>
+              </Link>
             </div>
           </>
         )}
