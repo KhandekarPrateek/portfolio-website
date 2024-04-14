@@ -14,10 +14,10 @@ const App = () => {
     <BrowserRouter>
       <div>
         <Row>
-          <Col sm={2}>
+          <Col sm={2} className="sidebar">
             <SideBar />
           </Col>
-          <Col sm={10}>
+          <Col sm={10} className="main">
             <Home />
             <About />
             <Education />

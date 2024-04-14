@@ -14,10 +14,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    /* left: 8%; */
+
     overflow-x: hidden;
     overflow: auto;
-    /* box-shadow: 0 0 30px rgb(0 0 0/5%); */
+    overflow: hidden;
   }
 }
 @media screen and (max-width: 700px) {
@@ -42,6 +42,24 @@
 .mobile-view {
   display: none;
 }
+
+@media screen and (min-width: 600px) {
+  .main {
+    height: 100%;
+  }
+  .sidebar {
+    height: 100vh;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  }
+  .desktop-view {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 @media (max-width: 600px) {
   .desktop-view {
     display: none;
@@ -51,7 +69,6 @@
     display: flex;
     align-items: center;
     position: fixed;
-
     width: inherit;
     background-color: white;
     overflow: hidden;
@@ -63,7 +80,6 @@
     right: 2%;
     cursor: pointer;
   }
-  /* //hehehe */
   .close-btn {
     color: black;
     position: absolute;
