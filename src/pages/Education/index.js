@@ -42,7 +42,7 @@ const Education = () => {
             <Row className=" w-100 ">
               <EducationTile
                 place="Cbse 10th Board"
-                marks="94.5%"
+                marks="94.5% "
                 year="2019"
               />
             </Row>
@@ -69,7 +69,7 @@ const Education = () => {
             </Row>
             <Row className="w-100">
               <EducationTile
-                place="National Recognition for Secondary Education"
+                place="National Recognition: Secondary Education"
                 marks="By Government of India"
                 year="2019"
               />

@@ -7,7 +7,7 @@ import { FaDatabase } from "react-icons/fa";
 import { FaReact } from "react-icons/fa";
 import { IoLogoFirebase } from "react-icons/io5";
 const SimpleSlider = () => {
-  var settings = {
+  const settings = {
     infinite: true,
     speed: 500,
     slidesToShow: 3,
@@ -67,22 +67,33 @@ const SimpleSlider = () => {
             icon={<IoLogoFirebase size={50} />}
             skillList={[
               "Firestore Database",
-              "Authentication and Authorization",
+              "Firebase Authentication",
+              "Google OAuth 2.0",
+              "SQL",
+              "C++",
             ]}
           />
         </div>
         <div className="d-flex align-items-center justify-content-center ">
           <SkillsTab
-            header={"Version Control"}
+            header={"Version Control/IDE"}
             icon={<FaGitAlt size={50} />}
-            skillList={["Git", "GitHub"]}
+            skillList={["Git", "GitHub", "VS Code", "Gedit"]}
           />
         </div>
         <div className="d-flex align-items-center justify-content-center ">
           <SkillsTab
             header={"Data Structures And Algorithms"}
             icon={<FaDatabase size={50} />}
-            skillList={["Proficient in C++"]}
+            skillList={[
+              "Arrays and Strings",
+              "Stacks and Queues",
+              "Trees and Graphs",
+              "Sorting and Searching Algorithms",
+              "Dynamic Programming and Backtracking",
+              "Heaps and Priority Queues",
+              "Algorithm Analysis and Complexity",
+            ]}
           />
         </div>
       </Slider>

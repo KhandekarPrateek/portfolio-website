@@ -1,18 +1,28 @@
 import React, { useState } from "react";
 import Title from "../Title/index";
-import { Row } from "reactstrap";
+import { Button, Row } from "reactstrap";
 import { IoMenu } from "react-icons/io5";
 import { IoCloseSharp } from "react-icons/io5";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { SiLeetcode } from "react-icons/si";
 
 const MobileView = () => {
   const [click, setclick] = useState(false);
+  const PDF_FILE_URL = `${window.location.origin}/portfolio.pdf`;
 
+  const handleDownloadCv = (url) => {
+    const aTag = document.createElement("a");
+    aTag.href = url;
+    aTag.setAttribute("download", "PORTFOLIO.pdf");
+    document.body.appendChild(aTag);
+    aTag.click();
+    aTag.remove();
+  };
   return (
     <div className="mobile-view">
-      <div className=" sidebar-container  d-flex flex-column align-items-center justify-content-center ">
-        <Row className="d-flex justify-content-center align-items-center ">
-          <h1 className="fw-bolder pt-2">PRATEEK</h1>
-        </Row>
+      <div className=" sidebar-container my-2 d-flex flex-column mx-2">
+        <h1 className="fw-bolder">PRATEEK</h1>
+
         {click ? (
           <IoCloseSharp
             className="close-btn"
@@ -28,14 +38,46 @@ const MobileView = () => {
         )}
 
         {click && (
-          <div className="vstack gap-3">
-            <Title Heading="Home" link="Home" />
-            <Title Heading="About" link="About" />
-            <Title Heading="Timeline" link="Education" />
-            <Title Heading="Projects" link="Projects" />
-            <Title Heading="Skills" link="Skills" />
-            <Title Heading="Contact" link="Contact" />
-          </div>
+          <>
+            <div className="w-100 d-flex justify-content-center py-0 my-0">
+              <hr className="w-50 py-0 my-0" />
+            </div>
+            <div className="vstack gap-3">
+              <Title heading="Home" link="Home" />
+              <Title heading="About" link="About" />
+              <Title heading="Timeline" link="Education" />
+              <Title heading="Projects" link="Projects" />
+              <Title heading="Skills" link="Skills" />
+              <Title heading="Contact" link="Contact" />
+            </div>
+            <div className="w-100 d-flex justify-content-center py-1 my-1">
+              <hr className="w-50 py-0 my-0" />
+            </div>
+
+            <Button
+              onClick={() => {
+                handleDownloadCv(PDF_FILE_URL);
+              }}
+              className="w-50 border-0 sidebar-title d-flex justify-content-start p-0"
+              outline
+            >
+              Download CV
+            </Button>
+            <div className="w-100 d-flex justify-content-center py-1 my-1">
+              <hr className="w-50 py-0 my-0" />
+            </div>
+            <div className="d-flex justify-content-center ">
+              <Button outline color="secondary" className="mx-1" size="sm">
+                <FaGithub size={18} className="mx-2" />
+              </Button>
+              <Button outline color="secondary" className="mx-1" size="sm">
+                <FaLinkedin size={18} className="mx-2" />
+              </Button>
+              <Button outline color="secondary" className="mx-1" size="sm">
+                <SiLeetcode size={18} className="mx-2" />
+              </Button>
+            </div>
+          </>
         )}
       </div>
     </div>
