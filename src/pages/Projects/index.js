@@ -9,9 +9,9 @@ import ProjectTile from "./ProjectTile";
 import Tenzies from "../../assets/tenzies.png";
 import HangMan from "../../assets/HangMan.png";
 import ArcadeMania from "../../assets/ArcadeMania.png";
-import Monsters from "../../assets/ArcadeMania.png";
-import ScriblleSphere from "../../assets/ArcadeMania.png";
+import NotesApp from "../../assets/NotesApp.png";
 import Meme from "../../assets/Meme.png";
+import MonstersRolodex from "../../assets/Rolodex.png";
 const Projects = () => {
   const [open, setOpen] = useState("");
   const toggle = (id) => {
@@ -44,16 +44,22 @@ const Projects = () => {
               className="scribble-sphere-accordion my-accordion" //change bg image to notes app
             >
               <ProjectTile
-                projectImage={Monsters}
+                projectImage={NotesApp}
                 ButtonText="Visit code"
                 description={[
-                  "Developed a full-stack notes app using React, Reactstrap Bootstrap, Firebase Authentication, and Firestore database.",
-                  "Implemented CRUD functionality for creating, reading, updating, and deleting notes, enhancing user productivity.",
-                  "Utilized Reactstrap Bootstrap for responsive UI design, ensuring seamless user experience across devices.",
-                  "Integrated Firebase Authentication for secure user authentication, safeguarding user data.",
-                  "Utilized Firestore database for efficient data storage and retrieval, ensuring scalability and performance.",
-                  "Implemented dark mode toggling feature using React Helmet for enhanced user customization.",
-                  "Incorporated TinyMCE code editor for rich text editing capabilities, offering a user-friendly note-taking experience.",
+                  "Robust authentication and authorization protocols ensure user account security.",
+                  "Efficiently store and manage notes within a secure environment.",
+                  "Enhance user experience with two intuitively designed themes.",
+                  "Seamlessly integrate the TinyMCE plugin for advanced text editing functionality.",
+                ]}
+                skills={[
+                  "React",
+                  "Firebase ",
+                  "Reactstrap",
+                  "Bootstrap",
+                  "TinyMCE",
+                  "Firestore",
+                  "Github",
                 ]}
                 codeLink="https://github.com/KhandekarPrateek/Notes-App/tree/master"
               />
@@ -71,10 +77,11 @@ const Projects = () => {
                 projectImage={ArcadeMania}
                 ButtonText="Visit Website"
                 description={[
-                  "Developed a collection of Hangman, Tenzies, and Meme Generator games using React Router DOM.",
-                  "Ensured full responsiveness across various devices and screen sizes, enhancing accessibility.",
-                  "Integrated React Router DOM for seamless navigation between different game modules, providing a smooth user experience.",
+                  "Ensured full responsiveness for accessibility on diverse devices.",
+                  "Integrated React Router DOM for smooth navigation between game modules.",
+                  "Developed games utilizing React Router DOM for seamless navigation.",
                 ]}
+                skills={["React", "Reactstrap", "Bootstrap", "Github"]}
                 codeLink="https://prateeksarcademania.web.app/"
               />
             </AccordionBody>
@@ -95,8 +102,8 @@ const Projects = () => {
                   "Dynamic data fetched via API integration.",
                   "Responsive design for seamless play on all devices.",
                   "Leveraged ES6+ features for efficient coding.",
-                  "Engaged with React.js community for insights.",
                 ]}
+                skills={["React", "CSS", "Fetch API", "Github"]}
                 codeLink="https://github.com/KhandekarPrateek/Tenzies-game"
               />
             </AccordionBody>
@@ -115,9 +122,10 @@ const Projects = () => {
                 description={[
                   "React.js-based meme generator project.",
                   "Integrated meme API for dynamic content.",
-                  "Demonstrated state management proficiency.",
                   "Implemented meme customization and download functionality.",
+                  "Used HTML2Canvas library to get content offline",
                 ]}
+                skills={["React", "CSS", "Fetch API", "Github", "Reactstrap"]}
                 codeLink="https://github.com/KhandekarPrateek/memeGenerator"
               />
             </AccordionBody>
@@ -134,12 +142,17 @@ const Projects = () => {
                 projectImage={HangMan}
                 ButtonText="Visit code"
                 description={[
-                  "Created a Hangman game project using React.js and Reactstrap.",
-                  "Utilized a word API to dynamically fetch words for gameplay, enhancing user experience.",
-                  "Demonstrated proficiency in integrating external APIs and managing API data within the application.",
-                  "Implemented interactive features and user-friendly UI components with Reactstrap, enhancing accessibility and engagement.",
-                  "Showcased problem-solving skills in developing game logic and user interactions.",
-                  "Resulted in a fully functional Hangman game, combining technical skills with creative gameplay.",
+                  "Utilized API for dynamic word fetching, enhancing UX.",
+                  "Proficient in API integration and data management.",
+                  "Implemented interactive features with Reactstrap.",
+                  "Showcased problem-solving skills in game development.",
+                ]}
+                skills={[
+                  "React",
+                  "Reactstrap",
+                  "Bootstrap",
+                  "Fetch API",
+                  "Github",
                 ]}
                 codeLink="https://github.com/KhandekarPrateek/ArcadeMania"
               />
@@ -155,16 +168,15 @@ const Projects = () => {
               className="rolodex-accordion my-accordion"
             >
               <ProjectTile
-                projectImage={Monsters}
+                projectImage={MonstersRolodex}
                 ButtonText="Visit code"
                 description={[
-                  "Developed Monsters Rolodex, my first React project.",
-                  "Utilized API for fetching monster images, enhancing visual appeal and diversity.",
-                  "Demonstrated foundational skills in React.js, including component creation and state management.",
-                  "Implemented dynamic filtering and search functionality for efficient navigation through the monster collection.",
-                  "Showcased growth and learning in web development through the completion of the project.",
-                  "Resulted in a visually appealing and functional application for exploring a diverse range of monster images.",
+                  "Utilized API for fetching monster images, enhancing visual appeal.",
+                  "Demonstrated foundational skills in React.js, including state management.",
+                  "Implemented dynamic filtering and search functionality.",
+                  "Resulted in visually appealing and functional monster image exploration app.",
                 ]}
+                skills={["React", "Fetch API", "Github", "CSS"]}
                 codeLink="https://github.com/KhandekarPrateek/monstersRolodex"
               />
             </AccordionBody>

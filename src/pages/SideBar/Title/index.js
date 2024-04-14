@@ -1,10 +1,10 @@
 import React from "react";
 
-const Title = ({ Heading, link }) => {
+const Title = ({ heading, link }) => {
   return (
     <div className=" pb-2 ">
       <a href={`#${link}`} className="sidebar-title">
-        {Heading}
+        {heading}
       </a>
     </div>
   );

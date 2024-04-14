@@ -9,24 +9,40 @@ const InfoTable = () => {
           <h1 className="about-detail-header-title ">Personal details</h1>
         </Row>
         <div className="infotable-conatiner">
-          <Row className="mb-3 p-4 infotable-text ">
-            <Col sm={3}>Name</Col>
+          <Row className="px-4 py-2 infotable-text ">
+            <Col sm={3} className="fw-bold">
+              Name:{" "}
+            </Col>
             <Col sm={9}>Prateek Khandekar</Col>
           </Row>
-          <Row className="mb-3 p-4 infotable-text">
-            <Col sm={3}>City</Col>
+          <Row className="px-4 py-2 infotable-text">
+            <Col sm={3} className="fw-bold">
+              City:{" "}
+            </Col>
             <Col sm={9}>Indore,MP</Col>
           </Row>
-          <Row className="mb-3 p-4 infotable-text">
-            <Col sm={3}>Degree</Col>
+          <Row className="px-4 py-2 infotable-text">
+            <Col sm={3} className="fw-bold">
+              University:{" "}
+            </Col>
+            <Col sm={9}>SGSITS Indore</Col>
+          </Row>
+          <Row className="px-4 py-2 infotable-text">
+            <Col sm={3} className="fw-bold">
+              Degree:{" "}
+            </Col>
             <Col sm={9}>Bachelors in Computer Science Engineering</Col>
           </Row>
-          <Row className="mb-3 p-4 infotable-text">
-            <Col sm={3}>Phone</Col>
+          <Row className="px-4 py-2 infotable-text">
+            <Col sm={3} className="fw-bold">
+              Phone:{" "}
+            </Col>
             <Col sm={9}>9109998901</Col>
           </Row>
-          <Row className="text-break mb-3 p-4 infotable-text">
-            <Col sm={3}>Email</Col>
+          <Row className="text-break px-4 py-2 infotable-text">
+            <Col sm={3} className="fw-bold">
+              Email:{" "}
+            </Col>
             <Col sm={9}>prateekkhandekar6@gmail.com</Col>
           </Row>
         </div>
