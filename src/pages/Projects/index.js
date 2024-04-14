@@ -9,7 +9,6 @@ import ProjectTile from "./ProjectTile";
 import Tenzies from "../../assets/tenzies.png";
 import HangMan from "../../assets/HangMan.png";
 import ArcadeMania from "../../assets/ArcadeMania.png";
-import Monsters from "../../assets/ArcadeMania.png";
 import NotesApp from "../../assets/NotesApp.png";
 import Meme from "../../assets/Meme.png";
 import MonstersRolodex from "../../assets/Rolodex.png";
